@@ -189,3 +189,55 @@ html {
 section {
     scroll-margin-top: 50px;
 }
+/* --- ส่วนแก้ไขเมนูให้กดได้ทั่วทั้งแถบ --- */
+.sidebar {
+    z-index: 999 !important; /* มั่นใจว่าเมนูอยู่บนสุด ไม่โดนอะไรทับ */
+}
+
+.nav-menu ul li {
+    padding: 0 !important;
+    margin: 0 !important;
+    display: block;
+}
+
+.nav-menu ul li a {
+    display: flex !important; 
+    align-items: center;
+    padding: 20px 30px !important; 
+    color: #666 !important; 
+    text-decoration: none !important; 
+    width: 100%;
+    transition: all 0.3s ease;
+    font-weight: 500;
+    cursor: pointer !important; /* บังคับให้เมาส์เป็นรูปมือ */
+}
+
+.nav-menu ul li a:hover {
+    background-color: #f4f7f6 !important;
+    color: #5b8c85 !important;
+    padding-left: 40px !important;
+}
+
+.nav-menu ul li a i {
+    margin-right: 15px;
+    width: 25px;
+    text-align: center;
+    color: #5b8c85;
+}
+
+/* --- ส่วนแก้ไขรูปโปรไฟล์ไม่ให้เบี้ยว --- */
+.profile-img {
+    width: 160px !important;
+    height: 160px !important;
+    object-fit: cover !important; /* ล็อคสัดส่วนหน้าไม่ให้ยืด */
+    border-radius: 50%;
+}
+
+/* --- ส่วนทำให้หน้าจอเลื่อนนิ่มๆ --- */
+html {
+    scroll-behavior: smooth;
+}
+
+section {
+    scroll-margin-top: 70px; /* เว้นระยะไม่ให้เลื่อนไปแล้วหัวข้อชิดขอบบนเกินไป */
+}
