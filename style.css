@@ -241,3 +241,30 @@ html {
 section {
     scroll-margin-top: 70px; /* เว้นระยะไม่ให้เลื่อนไปแล้วหัวข้อชิดขอบบนเกินไป */
 }
+/* --- ปรับระยะห่างระหว่างหัวข้อเนื้อหาให้โปร่งขึ้น --- */
+
+.content-section {
+    padding-top: 150px !important;    /* เพิ่มระยะด้านบนของแต่ละหัวข้อ */
+    padding-bottom: 150px !important; /* เพิ่มระยะด้านล่างของแต่ละหัวข้อ */
+    min-height: 100vh;                /* บังคับให้ 1 หัวข้อกินพื้นที่เกือบเต็มหน้าจอ */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;          /* จัดเนื้อหาให้อยู่กลางหน้าจอแนวตั้ง */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05); /* เพิ่มเส้นคั่นจางๆ */
+}
+
+.section-title {
+    margin-bottom: 80px !important;   /* เพิ่มระยะห่างระหว่างหัวข้อหลักกับเนื้อหาด้านล่าง */
+    font-size: 3.5rem !important;     /* ขยายขนาดหัวข้อให้เด่นขึ้น */
+    letter-spacing: 3px;              /* เพิ่มระยะห่างตัวอักษรให้ดูแพง */
+}
+
+/* เพิ่มระยะห่างระหว่างรายการย่อยๆ */
+.exp-item, .project-card, .edu-item, .skill-category {
+    margin-bottom: 50px !important;   /* เว้นระยะระหว่างกล่องข้อมูลแต่ละอัน */
+}
+
+/* ปรับ Smooth Scroll ให้หยุดในตำแหน่งที่พอดี ไม่ทับหัวข้อ */
+section {
+    scroll-margin-top: 80px;
+}
