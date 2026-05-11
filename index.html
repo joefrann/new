@@ -7,6 +7,49 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <style>
+  /* บังคับระยะห่างระหว่าง Section ให้กว้างขึ้นสะใจ */
+  .content-section {
+    padding-top: 180px !important;    /* ดันหัวข้อลงมา */
+    padding-bottom: 180px !important; /* เว้นระยะห่างด้านล่าง */
+    margin-bottom: 50px !important;
+    min-height: 90vh !important;      /* ให้แต่ละส่วนยาวเกือบเต็มหน้าจอ */
+    display: block !important;
+  }
+
+  .section-title {
+    margin-bottom: 70px !important;   /* ห่างจากเนื้อหาด้านล่าง */
+    font-size: 3.5rem !important;
+    border-left: 10px solid #1e6058 !important;
+    padding-left: 25px !important;
+  }
+
+  /* ป้องกัน Sidebar ทับปุ่มหรือลิงก์ */
+  .sidebar {
+    z-index: 9999 !important;
+  }
+
+  /* ทำให้เมนูกดง่ายขึ้น (ขยายพื้นที่กด) */
+  .nav-menu a {
+    padding: 25px 35px !important;
+    display: flex !important;
+    width: 100% !important;
+    text-decoration: none !important;
+  }
+
+  /* เว้นระยะห่างระหว่างกล่อง Experience / Projects */
+  .exp-item, .project-card, .edu-item, .skill-category {
+    margin-bottom: 60px !important;
+  }
+
+  /* แก้ไข Smooth Scroll */
+  html {
+    scroll-behavior: smooth !important;
+  }
+  section {
+    scroll-margin-top: 100px !important;
+  }
+</style>
 </head>
 <body>
     <div class="sidebar">
