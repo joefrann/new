@@ -149,3 +149,43 @@ body { margin: 0; font-family: 'Montserrat', sans-serif; display: flex; backgrou
 html {
     scroll-behavior: smooth;
 }
+/* 1. ทำให้ลิงก์ (<a>) ขยายเต็มพื้นที่ของรายการเมนู (<li>) */
+.nav-menu li {
+    padding: 0 !important; /* ยกเลิก padding เดิมของ li */
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: #666; /* สีตัวอักษรปกติ */
+    display: flex;
+    align-items: center;
+    padding: 20px 35px; /* ย้าย padding มาไว้ที่ตัวลิงก์แทน */
+    width: 100%;
+    transition: 0.3s;
+    font-weight: 500;
+}
+
+/* 2. ทำให้เวลาเอาเมาส์ชี้ (Hover) แล้วเปลี่ยนสีทั้งแถบ */
+.nav-menu a:hover {
+    background-color: #f8f9fa;
+    color: #5b8c85;
+    padding-left: 45px; /* เพิ่มลูกเล่นขยับนิดนึงแบบในรูปตัวอย่าง */
+}
+
+/* 3. จัดการ Icon ในเมนูให้สวยงาม */
+.nav-menu a i {
+    margin-right: 15px;
+    width: 20px;
+    color: #5b8c85;
+    text-align: center;
+}
+
+/* 4. สั่งให้เวลาคลิกแล้วหน้าจอเลื่อนแบบนุ่มนวล (Smooth Scroll) */
+html {
+    scroll-behavior: smooth;
+}
+
+/* 5. ตั้งค่าระยะหยุด (Offset) ไม่ให้เลื่อนไปแล้วหัวข้อโดน Sidebar หรือขอบบนทับ */
+section {
+    scroll-margin-top: 50px;
+}
