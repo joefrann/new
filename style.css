@@ -73,3 +73,79 @@ body { margin: 0; font-family: 'Montserrat', sans-serif; display: flex; backgrou
 
 .project-card h4 { margin-top: 0; color: #1e6058; font-size: 1.3rem; }
 }
+/* ตกแต่งส่วน Skills */
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.skill-category {
+    flex: 1;
+    min-width: 250px;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.skill-category h4 {
+    color: #d1e5e2;
+    border-bottom: 2px solid #1e6058;
+    padding-bottom: 10px;
+    margin-top: 0;
+}
+
+.skill-category ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 15px;
+}
+
+.skill-category li {
+    padding: 8px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    font-size: 1.1rem;
+}
+
+.skill-category li::before {
+    content: "⚡";
+    margin-right: 10px;
+}
+
+/* ตกแต่งส่วน Education */
+.edu-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.1);
+    padding: 25px;
+    border-radius: 12px;
+}
+
+.edu-info h4 {
+    margin: 0;
+    color: #d1e5e2;
+    font-size: 1.4rem;
+}
+
+.edu-date {
+    font-weight: bold;
+    color: #a2c1bc;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 5px 15px;
+    border-radius: 20px;
+}
+
+/* ส่วน Contact */
+.contact-links {
+    margin-top: 20px;
+}
+
+.contact-links i {
+    margin-right: 10px;
+}
+
+/* ทำให้หน้าเว็บเลื่อนลงมานิ่มๆ เวลาหัวหน้าดู */
+html {
+    scroll-behavior: smooth;
+}
